@@ -22,6 +22,14 @@ It's basically a skeleton with every bone you need, but missing the
 it's vital parts (the code that actually does stuff).
 
 
+### Matlab functions etc.
+
+Although I have put a substantial amount of time into Matlab coding, I have 
+never documented all the code that have written. This has now changed,
+and I will put Matlab codes that appear over time into this Github 
+repository: [LWSS](https://github.com/lsawade/lwss).
+
+
 ### Receiver Functions
 
-Receiver Function stuff shall go here...
+Receiver Function stuff shall go here... at some point...
