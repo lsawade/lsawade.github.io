@@ -29,6 +29,14 @@ never documented all the code that have written. This has now changed,
 and I will put Matlab codes that appear over time into this Github 
 repository: [LWSS](https://github.com/lsawade/lwss).
 
+### Python package/modules/functions
+
+Similarly, for Python I have also started creating an archive of modules and 
+functions. The package/repository is located here and will
+be kept up to date: [lwsspy](https://github.com/lsawade/lwsspy).
+Documentation for the package can be found here: 
+[https://lsawade.github.io/lwsspy/](https://lsawade.github.io/lwsspy/)
+
 
 ### Receiver Functions
 
