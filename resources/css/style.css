@@ -29,6 +29,7 @@ body{
 
 #navdiv {
     /* flex-wrap: wrap; */
+    color:white;
     display: flex;
     justify-content: center;
     padding: 10px;
@@ -42,9 +43,9 @@ body{
 }
 
 #navdiv span {
-    background-color: rgba(255,255,255,0.5);
+    /* background-color: rgba(255,255,255,0.5); */
     border-radius: 10px;
-    box-shadow: 0 0 10px #FFF;
+    /* box-shadow: inset 0 0 5px #000; */
 }
 
 #navdiv .navigation ul {
@@ -83,8 +84,6 @@ body{
     /* position: relative; */
     overflow: hidden;
     border-radius: 50%;
-    filter: grayscale(0.5);
-    box-shadow: 0 0 50px #000000;
 }
 
 .displacement-image-cropper img {
@@ -92,8 +91,15 @@ body{
     margin: -50% 0 0 -123%;
     height: 200%;
     width: auto;
+    opacity: 0.75;
+
+    /* background: rgba(255,255,255,.3); */
+
 }
 
+.blackshadow{
+    /* box-shadow: 0 0 10px rgba(0,0,0,1.); */
+}
 
 
 #main {
@@ -101,6 +107,34 @@ body{
     display: flex;
     justify-content: center;
 }
+
+.roundcorners {
+    border-radius: 10px;
+}
+
+.backdrop-black {
+    background: rgba(0,0,0,0.3);
+    box-shadow: inset 7.5px 7.5px 10px rgba(0,0,0,0.2), inset -2.5px -2.5px 10px rgba(255,255,255,0.2), 0px 0px 20px rgba(0,0,0,0.3);
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
+}
+
+.backdrop-white {
+    background: rgba(255,255,255,0.3);
+    box-shadow: inset 7.5px 7.5px 10px rgba(0,0,0,0.2), inset -2.5px -2.5px 10px rgba(255,255,255,0.2), 0px 0px 20px rgba(0,0,0,0.3);
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
+}
+
+.backdrop-nocolor {
+    /* background: rgba(255,255,255,.3); */
+    /* box-shadow: 0 0 15px rgba(255,255,255,0.5); */
+    box-shadow: inset 7.5px 7.5px 10px rgba(0,0,0,0.2), inset -2.5px -2.5px 10px rgba(255,255,255,0.2);
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
+}
+
+
 #quickview {
     /* margin: 0 auto; */
     width: 90%;
@@ -108,39 +142,35 @@ body{
     padding: 10px 10px;
     margin: 10px 2.5%;
     /* background-color: rgba(255,255,255,0.2); */
-    background-color: rgba(0,0,0,0.5);
-    border-radius: 10px;
-    box-shadow: 0 0 10px #000000;
-    flex-wrap: inherit;
+    /* flex-wrap: inherit; */
 }
 
 #quickview h1 {
     text-align: left;
+    color: aliceblue;
+    padding: 0px 20px
 }
 
 #quickview p {
     color: aliceblue;
     text-align: left;
     padding: 0px 20px
+
 }
 #quickview a {
     color: aliceblue;
 }
-
+#quickview a:hover {
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+}
 #about {
     /* margin: 0 auto; */
     width: 90%;
     max-width: 400px;
     padding: 10px 10px;
     margin: 10px 2.5%;
-    background-color: rgba(0,0,0,0.5);
-    border-radius: 10px;
-    box-shadow: 0 0 10px #000000;
-    flex-wrap: inherit;
-}
-
-#about h2 {
-    color: aliceblue;
 }
 
 #about h2 {
@@ -149,6 +179,8 @@ body{
 
 #about p {
     color: aliceblue;
+    text-align: left;
+
 }
 
 .wrap {
