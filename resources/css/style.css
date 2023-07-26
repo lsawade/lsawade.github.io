@@ -191,6 +191,7 @@ body{
     max-width: 400px;
     padding: 10px 10px;
     margin: 10px 2.5%;
+    /* margin: 10px 2.5%; */
 }
 
 #about h2 {
@@ -200,7 +201,7 @@ body{
 #about p {
     color: aliceblue;
     text-align: left;
-
+    padding: 0px 20px
 }
 
 .wrap {
