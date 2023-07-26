@@ -91,15 +91,12 @@ body{
     margin: -50% 0 0 -123%;
     height: 200%;
     width: auto;
-    opacity: 0.75;
-
+    filter: grayscale(40%);
+    /* opacity: 0.75; */
     /* background: rgba(255,255,255,.3); */
 
 }
 
-.blackshadow{
-    /* box-shadow: 0 0 10px rgba(0,0,0,1.); */
-}
 
 
 #main {
