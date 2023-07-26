@@ -1,49 +1,72 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
 
-<div class="posts">
-  {% for post in paginator.posts %}
-    <article class="post">
-      <a href="{{ site.baseurl }}{{ post.url }}">
-        <h1>{{ post.title }}</h1>
+  <head>
+    <!-- Metadata is contained in this element-->
+    <title> Spacious Space </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro" rel="stylesheet">
+    <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
 
-        <div>
-          <p class="post_date">{{ post.date | date: "%B %e, %Y" }}</p>
+  </head>
+
+
+  <body>
+
+    <div id="title">
+        <h1><span>Lucas Sawade</span></h1>
+    </div>
+    <div id="navdiv">
+        <span>
+            <nav class="navigation">
+                <ul>
+                    <li>Research</li>
+                    <li>CV</li>
+                    <li class="external">Github&#10169;</li>
+                </ul>
+            </nav>
+        <span>
+    </div>
+    <div id='roundthing' class="displacement-image-cropper">
+        <img src="./resources/images/displacement.gif" class="rounded" />
+    </div>
+    <div id="main">
+        <div id="quickview">
+            <h1> Lucas Sawade </h1>
+            <p>
+                <a href="mailto:lsawade@princeton.edu">lsawade@princeton.edu</a><br>
+                <a href="http://github.com/lsawade">github/lsawade</a><br>
+            </p>
         </div>
-      </a>
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
+        <div id="about">
 
-  <!-- pagination -->
-  {% if paginator.total_pages > 1 %}
-  <div class="pagination">
-    {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
-    {% else %}
-      <span>&laquo; Prev</span>
-    {% endif %}
 
-    {% for page in (1..paginator.total_pages) %}
-      {% if page == paginator.page %}
-        <span class="webjeda">{{ page }}</span>
-      {% elsif page == 1 %}
-        <a href="/">{{ page }}</a>
-      {% else %}
-        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-      {% endif %}
-    {% endfor %}
+            <h2> About Me</h2>
+                <p>
+                This is the main body of the html page
+                This <em>word</em> shall be <em>emphasized</em>.
 
-    {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
-    {% else %}
-      <span>Next &raquo;</span>
-    {% endif %}
-  </div>
-  {% endif %}
-</div>
+                <p> This is a paragraph </p>
+
+                <p>
+                sdlkjf lskjd flksjd flksj dflkjs ldkfj lskjdf lksjd flksjs kf
+                sldkfj lskdjf lskjd flksj dflkjs dlfkjs lkdf jsdjf
+                s dlfkj slkdfj slkdjf lskdjf lskjd fsdj flksjs dlkfj slkdjf lsdkjf
+                s dflksj dflkjs dlfkj
+                sd flksj dlfkj sdlkfj
+                sd fjklsj dflkj sdlkfj lsdkjfs ldkfj slkjfd lskdjfsd fjkls flkjsdf
+                </p>
+            <h2> Projects </h2>
+
+        </div>
+
+    </div>
+
+</body>
+
+<footer>
+    <p>Hello</p>
+</footer>
+</html>

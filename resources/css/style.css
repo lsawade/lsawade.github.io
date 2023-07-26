@@ -1,0 +1,157 @@
+* {
+    text-align: center;
+    font-family: 'Source Code Pro', monospace, Arial, Helvetica, sans-serif;
+    letter-spacing: -1px;
+}
+
+body{
+    background-image: url('../images/galaxy.jpg');
+    /* background-image: url('../images/globalwave.gif'); */
+    /* background-repeat: no-repeat; */
+    /* background-color: rgba(255,255,255,1.0); */
+    justify-content: center;
+}
+
+#title h1 {
+    color:white;
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+#title h1 span {
+    /* background-color: #FFFFFF; */
+    padding: 2.55%;
+    border-radius: 5px;
+}
+
+#navdiv {
+    /* flex-wrap: wrap; */
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 20px;
+}
+
+#navdiv .navigation {
+    /* margin: 0 auto; */
+    /* width: 50%; */
+    max-width: 800px;
+}
+
+#navdiv span {
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 10px;
+    box-shadow: 0 0 10px #FFF;
+}
+
+#navdiv .navigation ul {
+    margin: 0;
+    padding: 10px 20px;
+}
+
+#navdiv .navigation li {
+    display: inline-block;
+    font-weight: 100;
+    letter-spacing: 2px;
+    padding: 0px 10px;
+    /* margin-right: 2.5%;
+    margin-left: 2.5%; */
+    font-weight: bold;
+    font-size: larger;
+    text-align: center;
+
+}
+
+#navdiv .navigation  li.external {
+    font-style: italic;
+}
+
+
+#roundthing {
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.displacement-image-cropper {
+    margin: 20px auto;
+    width: 100px;
+    height: 100px;
+    /* object-fit: cover; */
+    /* position: relative; */
+    overflow: hidden;
+    border-radius: 50%;
+    filter: grayscale(0.5);
+    box-shadow: 0 0 50px #000000;
+}
+
+.displacement-image-cropper img {
+    /* display: inline; */
+    margin: -50% 0 0 -123%;
+    height: 200%;
+    width: auto;
+}
+
+
+
+#main {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+#quickview {
+    /* margin: 0 auto; */
+    width: 90%;
+    max-width: 400px;
+    padding: 10px 10px;
+    margin: 10px 2.5%;
+    /* background-color: rgba(255,255,255,0.2); */
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000000;
+    flex-wrap: inherit;
+}
+
+#quickview h1 {
+    text-align: left;
+}
+
+#quickview p {
+    color: aliceblue;
+    text-align: left;
+    padding: 0px 20px
+}
+#quickview a {
+    color: aliceblue;
+}
+
+#about {
+    /* margin: 0 auto; */
+    width: 90%;
+    max-width: 400px;
+    padding: 10px 10px;
+    margin: 10px 2.5%;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000000;
+    flex-wrap: inherit;
+}
+
+#about h2 {
+    color: aliceblue;
+}
+
+#about h2 {
+    color: aliceblue;
+}
+
+#about p {
+    color: aliceblue;
+}
+
+.wrap {
+    float: right;
+    margin: 5px;
+}
