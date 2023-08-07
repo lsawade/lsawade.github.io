@@ -17,7 +17,8 @@ body{
 #title h1 {
     color:white;
     text-align: center;
-    margin-top: 50px;
+    /* margin-top: 40px; */
+    margin: 40px 0px -10px 0px;
     padding: 10px;
     font-size: xx-large;
     /* font-style: italic; */
@@ -208,6 +209,18 @@ body{
     justify-content: center;
 }
 
+#main p {
+    font-size: small;
+    color: aliceblue;
+    text-align: left;
+    padding: 0px 20px
+}
+
+#main h1 {
+    font-size: x-large;
+    color: aliceblue;
+}
+
 .roundcorners {
     border-radius: 5px 5px 5px 5px;
 }
@@ -224,15 +237,11 @@ body{
 
 #quickview h1 {
     text-align: left;
-    color: aliceblue;
     padding: 0px 20px
 }
 
 #quickview p {
     color: aliceblue;
-    text-align: left;
-    padding: 0px 20px
-
 }
 #quickview a {
     color: aliceblue;
@@ -249,16 +258,6 @@ body{
     padding: 10px 10px;
     margin: 10px 2.5%;
     /* margin: 10px 2.5%; */
-}
-
-#about h2 {
-    color: aliceblue;
-}
-
-#about p {
-    color: aliceblue;
-    text-align: left;
-    padding: 0px 20px
 }
 
 .wrap {
