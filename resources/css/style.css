@@ -59,11 +59,11 @@ body{
     font-weight: 100;
     letter-spacing: 2px;
     padding: 10px 10px;
-    margin: 10px 5px;
+    margin: 10px 3px;
     /* margin-right: 2.5%;
     margin-left: 2.5%; */
     font-weight: bold;
-    font-size: larger;
+    font-size: medium;
     text-align: center;
 
 }
@@ -82,9 +82,9 @@ body{
 }
 
 .displacement-image-cropper {
-    margin: 30px 10px;
-    width: 100px;
-    height: 100px;
+    margin: 15px 10px;
+    width: 80px;
+    height: 80px;
     /* object-fit: cover; */
     /* position: relative; */
     overflow: hidden;
@@ -103,9 +103,9 @@ body{
 }
 
 .displacement-image-cropper-beach {
-    margin: 30px 10px;
-    width: 100px;
-    height: 100px;
+    margin: 15px 10px;
+    width: 80px;
+    height: 80px;
     /* object-fit: cover; */
     /* position: relative; */
     overflow: hidden;
@@ -114,8 +114,8 @@ body{
 
 .displacement-image-cropper-beach img {
     /* display: inline; */
-    margin: -2px 0 0 -4px;
-    height: 106px;
+    margin: -1% 0 0 -5%;
+    height: 107%;
     justify-content: center;
     width: auto;
     /* height: auto; */
@@ -126,9 +126,9 @@ body{
 }
 
 .displacement-image-cropper-portrait {
-    margin: 10px 10px;
-    width: 140px;
-    height: 140px;
+    margin: 5px 5px;
+    width: 100px;
+    height: 100px;
     /* object-fit: cover; */
     /* position: relative; */
     overflow: hidden;
@@ -137,8 +137,8 @@ body{
 
 .displacement-image-cropper-portrait img{
     /* display: inline; */
-    margin: -9px 0 0 -2px;
-    height: 200px;
+    margin: -9% 0 0 -3%;
+    height: 150%;
     justify-content: center;
     width: auto;
     /* height: auto; */
