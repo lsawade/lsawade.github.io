@@ -8,6 +8,8 @@ body{
     background-image: url('../images/galaxy.jpg');
     /* background-image: url('../images/globalwave.gif'); */
     /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: center;
     /* background-color: rgba(255,255,255,1.0); */
     justify-content: center;
 }
@@ -114,7 +116,7 @@ body{
 
 .displacement-image-cropper-beach img {
     /* display: inline; */
-    margin: -1% 0 0 -5%;
+    margin: -3% 0 0 -5%;
     height: 107%;
     justify-content: center;
     width: auto;
