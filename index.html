@@ -15,36 +15,56 @@
     <body>
 
         <div id="title">
-            <h1><span>Lucas Sawade</span></h1>
+            <a href="index.html"><h1><span>Lucas Sawade</span></h1></a>
         </div>
-        <div id="navdiv">
-            <span>
-                <nav class="navigation">
-                    <ul>
-                        <li class="backdrop-black roundcorners">Research</li>
-                        <li class="backdrop-black roundcorners">CV</li>
-                        <li class="backdrop-black roundcorners">Github&#10169;</li>
-                    </ul>
-                </nav>
-            <span>
+        <div id="nav">
+            <nav>
+                <ul>
+                    <a href="pages/research.html"><li class="backdrop-black roundcorners">Research</li></a>
+                    <a href="resources/files/cv.pdf" target="_blank"><li class="backdrop-black roundcorners">CV</li></a>
+                    <a href="https://github.com/lsawade" target="_blank"><li class="backdrop-black roundcorners"><img src="../resources/images/github.svg" style="height:2ex;fill: #ffffff;"></li></a>
+                </ul>
+            </nav>
         </div>
+
         <div id='roundthings'>
-            <div class="displacement-image-cropper backdrop-black">
-                <img src="./resources/images/displacement.gif"/>
+            <div class="roundthingcontainer">
+                <img src="./resources/images/orbit_back.gif" class="orbitback rotate45"/>
+                <div class="displacement-image-cropper backdrop-black">
+                    <img src="./resources/images/displacement.gif"/>
+                </div>
+                <img src="./resources/images/orbit_front.gif" class="orbitfront  rotate45"/>
             </div>
             <div class="displacement-image-cropper-portrait backdrop-white backdrop-white-round">
                 <img src="./resources/images/portrait.png"/>
             </div>
-            <div class="displacement-image-cropper-beach backdrop-white">
-                <img src="./resources/images/beachball_half.gif"/>
+            <div class="roundthingcontainer">
+                <img src="./resources/images/orbit_back.gif" class="orbitback"/>
+                <div class="displacement-image-cropper-beach">
+                    <img src="./resources/images/beachball_half.gif" />
+                </div>
+                <img src="./resources/images/orbit_front.gif" class="orbitfront"/>
             </div>
         </div>
+
         <div id="main">
+
             <div id="quickview" class="backdrop-black roundcorners">
                 <h1> Lucas Sawade </h1>
                 <p>
-                    <a href="mailto:lsawade@princeton.edu">lsawade@princeton.edu&#10169;</a><br>
-                    <a href="http://github.com/lsawade">github/lsawade&#10169;</a><br>
+                    <b>Ph.D. Candidate</b><br>
+                    <a href="https://geosciences.princeton.edu" target="_blank">Department of Geosciences</a><br>
+                    <a href="https://www.princeton.edu" target="_blank">Princeton University</a><br>
+                </p>
+                <p>
+                    <b>Graduate Student Helper</b><br>
+                    <a href="https://researchcomputing.princeton.edu" target="_blank">Princeton Institute for Computational Science and Engineering (PICSciE)</a><br>
+                </p>
+
+                <h2> Contact </h2>
+                <p>
+                    <a href="mailto:lsawade@princeton.edu" target="_blank">lsawade@princeton.edu&#10169;<br></a>
+                    <a href="http://github.com/lsawade" target="_blank">github/lsawade&#10169;</a>
                 </p>
             </div>
 

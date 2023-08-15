@@ -23,6 +23,13 @@ body{
     font-size: xx-large;
     /* font-style: italic; */
     /* text-decoration: underline; */
+    text-decoration: underline;
+}
+
+#title h1:hover {
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 #title h1 span {
@@ -31,33 +38,25 @@ body{
     border-radius: 5px;
 }
 
-#navdiv {
+nav {
+    justify-content: center;
     /* flex-wrap: wrap; */
     color:white;
     display: flex;
-    justify-content: center;
+
     /* padding: 10px; */
     margin: 15px;
-}
-
-#navdiv .navigation {
-    /* margin: 0 0; */
-    /* width: 50%; */
     max-width: 800px;
+    display: inline-block;
+    /* list-style-type: none; */
 }
 
-#navdiv span {
-    /* background-color: rgba(255,255,255,0.5); */
-    /* border-radius: 10px; */
-    /* box-shadow: inset 0 0 5px #000; */
-}
-
-#navdiv .navigation ul {
+nav ul {
     margin: 0;
     padding: 10px 0px;
 }
 
-#navdiv .navigation li {
+nav li {
     display: inline-flex;
     font-weight: 100;
     letter-spacing: 2px;
@@ -71,10 +70,31 @@ body{
 
 }
 
-#navdiv .navigation li:hover {
+nav li:hover {
     box-shadow: inset 0 0px 20px rgba(255, 255, 255, 0.3), 0 0px 10px rgba(255, 255, 255, 0.3);
     background-color: rgba(255, 255, 255, 0.15);
     border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* unvisited link */
+nav a:link {
+    color: inherit;
+}
+
+/* visited link */
+nav a:visited {
+    color: inherit;
+}
+
+/* mouse over link */
+nav a:hover {
+    color: hotpink;
+    font-style: italic;
+}
+
+/* selected link */
+nav a:active {
+    color: blue;
 }
 
 #roundthings {
@@ -82,6 +102,29 @@ body{
     /* margin: 0px auto; */
     /* flex-wrap: wrap; */
     display: inline-flex;
+}
+
+.roundthingcontainer {
+    position: relative;
+    display: inline;
+}
+
+.orbitfront {
+    position: absolute;
+    bottom: -0%;
+    left: -10%;
+    z-index: 4;
+}
+
+.orbitback {
+    position: absolute;
+    bottom: -0%;
+    left: -10%;
+    z-index: -1;
+}
+
+.rotate45 {
+    rotate: -135deg;
 }
 
 .displacement-image-cropper {
@@ -92,6 +135,7 @@ body{
     /* position: relative; */
     overflow: hidden;
     border-radius: 50%;
+    z-index: 1;
 }
 
 .displacement-image-cropper img {
@@ -100,6 +144,7 @@ body{
     height: 200%;
     width: auto;
     filter: grayscale(40%);
+
     /* opacity: 0.75; */
     /* background: rgba(255,255,255,.3); */
 
@@ -151,29 +196,6 @@ body{
 
 }
 
-
-.backdrop-black {
-    background: rgba(0,0,0,0.2);
-    /* box-shadow: inset 7.5px 7.5px 10px rgba(0,0,0,0.2), inset -2.5px -2.5px 10px rgba(255,255,255,0.2), 0px 0px 20px rgba(0,0,0,0.3);
-    box-shadow: inset 0px 0px 10px rgba(255,255,255,0.3);
-    backdrop-filter: blur( 2px );
-    -webkit-backdrop-filter: blur( 2px );
-}
-
-.backdrop-white {
-    background: rgba(255,255,255,0.2);
-    box-shadow: inset 7.5px 7.5px 10px rgba(0,0,0,0.2), inset -2.5px -2.5px 10px rgba(255,255,255,0.2), 0px 0px 20px rgba(0,0,0,0.3);
-    backdrop-filter: blur( 2px );
-    -webkit-backdrop-filter: blur( 2px );
-}
-
-.backdrop-white-round {
-    background: rgba(255,255,255,1);
-    /* backdrop-filter: blur( 2px ); */
-    /* -webkit-backdrop-filter: blur( 2px ); */
-}
-
-
 .backdrop-black {
     /* From https://css.glass */
     background: rgba(0, 0, 0, 0.2);
@@ -203,10 +225,21 @@ body{
 }
 
 
-#main {
+/* #main {
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
+} */
+#main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:flex-start;
+    align-content:flex-start;
+  /* width: 400px; */
+  /* padding: 10px; */
+  /* border: 1px solid green; */
 }
 
 #main p {
@@ -221,21 +254,30 @@ body{
     color: aliceblue;
 }
 
+#main h2 {
+    font-size: large;
+    color: aliceblue;
+}
+
 .roundcorners {
     border-radius: 5px 5px 5px 5px;
 }
 
 #quickview {
-    /* margin: 0 auto; */
     width: 90%;
     max-width: 400px;
     padding: 10px 10px;
     margin: 10px 2.5%;
-    /* background-color: rgba(255,255,255,0.2); */
-    /* flex-wrap: inherit; */
+    position: relative;
+    height: auto;
 }
 
 #quickview h1 {
+    text-align: left;
+    padding: 0px 20px
+}
+
+#quickview h2 {
     text-align: left;
     padding: 0px 20px
 }
@@ -260,7 +302,37 @@ body{
     /* margin: 10px 2.5%; */
 }
 
-.wrap {
-    float: right;
-    margin: 5px;
+.topic {
+    /* margin: 0 auto; */
+    width: 90%;
+    /* height: auto; */
+    max-width: 800px;
+    padding: 10px 10px;
+    margin: 10px 2.5%;
+    /* overflow: hidden; */
+    /* position:relative; */
+    /* margin: 10px 2.5%; */
 }
+
+.view{
+    overflow: hidden;
+    max-height:400px;
+    position: relative;
+    /* border:1px solid #999; */
+}
+
+.view.expanded{
+    max-height:none;
+}
+
+.read-more{
+    text-align: right;
+    color: aliceblue;
+}
+
+.read-more.hover{
+    text-decoration: underline;
+    /* cursor: pointer; */
+    font: italic;
+}
+
