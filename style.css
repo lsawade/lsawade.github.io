@@ -1,0 +1,363 @@
+/* Color Palette */
+:root {
+    --primary-color: rgba(0, 0, 0, 0.7); /* Transparent black */
+    --secondary-color: #fff; /* White */
+    --text-color: #fff; /* White */
+    --background-color: rgba(0, 0, 0, 1.0); /* Transparent white */
+}
+
+/* Basic Styling */
+body {
+    margin: 0; /* Remove default margin */
+    font-family: 'Roboto Mono', monospace; /* Change font to Roboto Mono */
+    line-height: 1.6;
+    /* background-image: url('galaxy.jpg');
+    background-size: cover;
+    background-position: center; */
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure that the body stretches to at least the height of the viewport */
+    backdrop-filter: blur(20px); /* Apply blur effect to the entire background */
+    z-index: -2;
+}
+/* CSS for menu */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    padding: 20px;
+    border-bottom: none; /* Remove border */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Remove default margin */
+    position: relative;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: rgba(255, 255, 255, 0.9); /* Lighter color for menu items */
+    text-decoration: none;
+    position: relative;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    border: none; /* Remove border */
+    margin-top: auto; /* Push the footer to the bottom of the page */
+}
+
+.footer-social-links {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    position: relative;
+    height: 30px;
+    z-index: 1;
+}
+
+.footer-social-links a {
+    position: relative;
+    margin: 0 10px; /* Add margin between social media icons */
+}
+
+.footer-social-links img {
+    width: 30px; /* Adjust the width of the social media icons */
+    height: auto; /* Maintain aspect ratio */
+    transition: filter 0.3s; /* Add transition effect */
+}
+
+
+.footer-social-links a::before {
+        justify-content: center;
+        content: '';
+        position: absolute;
+        top: 50%; /* Move the top edge of the pseudo-element to the vertical center */
+        left: 50%;
+        transform: translate(-50%, -50%); /* Move the pseudo-element back by half of its width and height */
+        width: 125%; /* Increase the width to cover the entire element */
+        height: 125%;
+        background-position: center;
+        background-color: rgba(255, 255, 255, 0); /* Start with transparent background */
+        border-radius: 10px; /* Adjust border radius as needed */
+        z-index: -1; /* Move pseudo-element behind the button content */
+        transition: background-color 0.3s; /* Add transition effect for background color */
+        filter: blur(5px);
+}
+
+.footer-social-links a:hover::before {
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+}
+
+main {
+    flex: 1;
+    padding: 30px;
+    border-radius: 50px; /* Add rounded edges */
+    overflow: auto; /* Allow scrolling if content exceeds container height */
+     /* Add glass morphism */
+    /* background-image: linear-gradient(to bottom, rgba(0,0,0,0), black), url('galaxy.jpg'); Set background image with gradient */
+    /* background-size: cover; */
+    background-position: center;
+    position: relative; /* Set position to relative */
+}
+
+main a {
+    color: var(--text-color);
+}
+main a:hover{
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+}
+main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('resources/images/galaxy.jpg'); /* Set galaxy picture as background */
+    background-size: cover;
+    background-position: center;
+    border-radius: 40; /* Inherit border-radius from main block */
+    filter: blur(15px); /* Apply blur to the background image */
+    z-index: -1; /* Move the pseudo-element below the main content */
+    opacity: .75; /* Adjust opacity to blend with the main content */
+    box-shadow: inset 0 0 100px 100px var(--background-color);
+}
+
+#main-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+figure img{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+
+figcaption {
+    text-align: left;
+    color: var(--text-color);
+    font-size: x-small;
+    font-style: italic;
+    width: 100%;
+    margin: 0 auto;
+}
+
+section {
+    padding: 20px;
+    /* background-color: rgba(255, 255, 255, 0.0); Transparent white */
+    /* border-radius: 10px; Add rounded corners*/
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+/* CSS for smaller screens */
+@media screen and (max-width: 1024px) {
+    header {
+        justify-content: center; /* Center header items */
+        flex-direction: column; /* Stack header items vertically */
+        text-align: center; /* Center text */
+    }
+
+    nav {
+        margin-top: 20px; /* Add space between title and menu */
+        text-align: center; /* Center menu items */
+    }
+
+    nav ul {
+        display: inline-block; /* Display menu items inline */
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 0 10px; /* Add margin between menu items */
+    }
+}
+
+/* CSS for larger screens */
+@media screen and (min-width: 769px) {
+
+    h2 {
+        margin-bottom: 20px; /* Add space below h2 */
+    }
+}
+
+
+/* Add this CSS to style.css */
+
+.entry {
+    margin-bottom: 20px;
+}
+
+.entry-content {
+    display: none;
+    margin-top: 10px;
+}
+
+.entry-content.show {
+    display: block;
+}
+
+
+.toggle-button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.toggle-button:hover {
+    background-color: #333; /* Darken the background color on hover */
+}
+
+/* Four orbity things */
+
+#roundthings {
+    /* /* align-items: center; */
+    justify-content: center; */
+    margin: 0 auto;
+    /* flex-wrap: wrap; */
+    display: flex;
+}
+
+.roundthingcontainer {
+    justify-content: center;
+    position: relative;
+    display: inline;
+}
+
+.orbitfront {
+    position: absolute;
+    bottom: -0%;
+    left: -10%;
+    z-index: 4;
+}
+
+.orbitback {
+    position: absolute;
+    bottom: -0%;
+    left: -10%;
+    z-index: -1;
+}
+
+.rotate45 {
+    rotate: -135deg;
+}
+
+.displacement-image-cropper {
+    margin: 15px 10px;
+    width: 80px;
+    height: 80px;
+    /* object-fit: cover; */
+    /* position: relative; */
+    overflow: hidden;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.displacement-image-cropper img {
+    /* display: inline; */
+    margin: -50% 0 0 -123%;
+    height: 200%;
+    width: auto;
+    filter: grayscale(40%);
+
+    /* opacity: 0.75; */
+    /* background: rgba(255,255,255,.3); */
+
+}
+
+.displacement-image-cropper-beach {
+    margin: 15px 10px;
+    width: 80px;
+    height: 80px;
+    /* object-fit: cover; */
+    /* position: relative; */
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.displacement-image-cropper-beach img {
+    /* display: inline; */
+    margin: -3% 0 0 -5%;
+    height: 107%;
+    justify-content: center;
+    width: auto;
+    /* height: auto; */
+    /* filter: grayscale(40%); */
+    /* opacity: 0.75; */
+    background: rgba(255, 255, 255, 1.0);
+
+}
+
+.displacement-image-cropper-portrait {
+    margin: 5px 5px;
+    width: 100px;
+    height: 100px;
+    /* object-fit: cover; */
+    /* position: relative; */
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.displacement-image-cropper-portrait img {
+    /* display: inline; */
+    margin: -9% 0 0 -3%;
+    height: 150%;
+    justify-content: center;
+    width: auto;
+    /* height: auto; */
+    /* filter: grayscale(40%); */
+    /* opacity: 0.75; */
+    background: rgba(255, 255, 255, 1.0);
+
+}
+
+.backdrop-black {
+    /* From https://css.glass */
+    background: rgba(0, 0, 0, 0.3);
+    /* border-radius: 16px; */
+    box-shadow: inset 0 4px 30px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.backdrop-white {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.15);
+    /* border-radius: 16px; */
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.backdrop-nocolor {
+    /* background: rgba(255,255,255,.3); */
+    /* box-shadow: 0 0 15px rgba(255,255,255,0.5); */
+    box-shadow: inset 7.5px 7.5px 10px rgba(0, 0, 0, 0.2), inset -2.5px -2.5px 10px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+}
